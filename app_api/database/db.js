@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const host = process.env.DB_HOST || '127.0.0.1'
-const dbURI = 'mongodb://${host}/travlr';
-const readLine = require('readLime');
+const dbURI = `mongodb://${host}/travlr`;
+const readLine = require('readline');
 
 //avoid 'current Server Discovery and Monitoring engine is deprecated'
 mongoose.set('useUnifiedTopology', true);
